@@ -1,17 +1,25 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Navbar></Navbar>
+    <SectionA></SectionA>
+    <Divsection></Divsection>
+    <SectionB></SectionB>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Navbar from './components/Navbar.vue'
+import SectionA from './components/SectionA.vue'
+import SectionB from './components/SectionB.vue'
+import Footer from './components/Footer.vue'
+import Divsection from './components/Divsection.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Navbar,SectionA,SectionB,Footer,
+    Divsection
   }
 }
 </script>
@@ -24,5 +32,7 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  width: 1390px;
+  margin:0 auto
 }
 </style>
