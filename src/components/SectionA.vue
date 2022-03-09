@@ -8,29 +8,41 @@
 </template>
 
 <script>
-import Carousel from '../components/Carousel.vue';
-import Form from '../components/Form.vue';
+import Carousel from "../components/Carousel.vue";
+import Form from "../components/Form.vue";
 export default {
-  components:{
-      Carousel,Form
-  }
+  components: {
+    Carousel,
+    Form,
+  },
 };
 </script>
 
 <style lang="scss" scoped>
-.row {
-  display: flex;
-  height: 686px;
-}
 .section_a {
   padding: 20px 0;
-}
-.col {
-  width: 50%;
+  .row {
+    display: flex;
+    
+  }
+
+  .col {
+    width: 50%;
+  }
+
+  .col_left {
+    position: relative;
+  }
 }
 
-.col_left {
-  position: relative;
+@media only screen and (max-width: 375px) {
+  .row {
+    height: auto;
+    flex-wrap: wrap;
+    .col {
+      width: 100%;
+      
+    }
+  }
 }
-
 </style>
