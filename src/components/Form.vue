@@ -1,8 +1,8 @@
 <template>
   <div class="form">
-    <h3 class="py-2">Pigiama per bambina</h3>
-    <p class="p py-2">Articolo. 02765/46</p>
-    <div class="d_flex py-20">
+    <h3 class="py-2 pb-3">Pigiama per bambina</h3>
+    <p class="p py-2 pb-3">Articolo. 02765/46</p>
+    <div class="d_flex py-20 pb-3">
       <span class="recens py-2">Recensioni</span>
       <font-awesome-icon
         v-for="item in 4"
@@ -12,7 +12,7 @@
       <div>14 recensioni</div>
       <font-awesome-icon icon="fa-solid fa-chevron-right" />
     </div>
-    <div class="d_flex py-2">
+    <div class="d_flex py-2 pb-5">
       <h2>800 <font-awesome-icon icon="fa-solid fa-ruble-sign" /></h2>
       <h4>1500 <font-awesome-icon icon="fa-solid fa-ruble-sign" /></h4>
       <font-awesome-icon icon="fa-solid fa-chevron-right" />
@@ -213,6 +213,12 @@ export default {
 
   td {
     border-bottom: 12px solid transparent;
+  }
+  .pb-3{
+    padding-bottom:5px ;
+  }
+  .pb-5{
+    padding-bottom:15px ;
   }
 }
 
